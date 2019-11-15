@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description         = "用于支持SDWebImage加载webp格式图片"
   s.license             = "MIT"
   s.compiler_flags      = "-D_THREAD_SAFE"
-  s.platform            = :ios
+  s.platform            = :ios,"8.0"
   s.requires_arc        = false
   s.pod_target_xcconfig = {  "USER_HEADER_SEARCH_PATHS" => "$(inherited) ${PODS_ROOT}/yhlibwebp/**" }
   s.xcconfig            = {'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SD_WEBP=1'}
