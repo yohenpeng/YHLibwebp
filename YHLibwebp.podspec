@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "yhlibwebp"
-  s.version             = "1.0.4"
+  s.version             = "1.0.5"
   s.summary             = "Asynchronous image downloader"
   s.homepage            = "https://www.yohen.me"
   s.author              = { "yohen" => "yohenpeng@gmail.com"}
@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.description         = "用于支持SDWebImage加载webp格式图片"
   s.license             = "MIT"
   s.compiler_flags      = "-D_THREAD_SAFE"
+  s.platform            = :ios
   s.requires_arc        = false
   s.pod_target_xcconfig = {  "USER_HEADER_SEARCH_PATHS" => "$(inherited) ${PODS_ROOT}/yhlibwebp/**" }
   s.xcconfig            = {'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SD_WEBP=1'}
