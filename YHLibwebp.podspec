@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "yhlibwebp"
-  s.version             = "1.0.3"
+  s.version             = "1.0.4"
   s.summary             = "Asynchronous image downloader"
   s.homepage            = "https://www.yohen.me"
   s.author              = { "yohen" => "yohenpeng@gmail.com"}
@@ -46,6 +46,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'decoder' do |a|
     a.source_files = 'webpdecoder/*{h,m}'
+    a.dependency 'SDWebImage'
   end
 
 end
