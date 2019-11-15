@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "yhlibwebp"
-  s.version             = "1.0.2"
+  s.version             = "1.0.3"
   s.summary             = "Asynchronous image downloader"
   s.homepage            = "https://www.yohen.me"
   s.author              = { "yohen" => "yohenpeng@gmail.com"}
@@ -43,4 +43,9 @@ Pod::Spec.new do |s|
     a.source_files = 'src/mux/*{h,c}'
     a.dependency 'yhlibwebp/core'
   end
+
+  s.subspec 'decoder' do |a|
+    a.source_files = 'webpdecoder/*{h,m}'
+  end
+
 end
