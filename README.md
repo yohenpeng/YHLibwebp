@@ -30,7 +30,7 @@ SDImageWebPCoder *coder = [SDImageWebPCoder sharedCoder];
 
 ### 现有解决方案
 
-####A.翻墙 + 替换host文件
+#### A.翻墙 + 替换host文件
 
 [host文件链接](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)
 
